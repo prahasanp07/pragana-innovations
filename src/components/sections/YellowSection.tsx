@@ -21,7 +21,7 @@ export default function YellowSection() {
       });
 
       // Animate header elements
-      tl.from(headerRef.current.children, {
+      tl.from(headerRef.current!.children, {
         y: 40,
         opacity: 0,
         duration: 0.8,
@@ -30,7 +30,7 @@ export default function YellowSection() {
       });
 
       // Animate cards
-      tl.from(cardsRef.current.children, {
+      tl.from(cardsRef.current!.children, {
         y: 60,
         opacity: 0,
         duration: 0.8,

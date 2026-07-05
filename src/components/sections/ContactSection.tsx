@@ -20,7 +20,7 @@ export default function ContactSection() {
     if (!sectionRef.current || !containerRef.current) return;
 
     const ctx = gsap.context(() => {
-      gsap.from(containerRef.current.children, {
+      gsap.from(containerRef.current!.children, {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 75%",

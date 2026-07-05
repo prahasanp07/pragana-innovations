@@ -20,7 +20,7 @@ export default function SelectedWorks() {
         }
       });
 
-      tl.from(headerRef.current.children, {
+      tl.from(headerRef.current!.children, {
         y: 40,
         opacity: 0,
         duration: 0.8,
@@ -28,7 +28,7 @@ export default function SelectedWorks() {
         ease: "power3.out"
       });
 
-      tl.from(cardsRef.current.children, {
+      tl.from(cardsRef.current!.children, {
         y: 60,
         opacity: 0,
         duration: 0.8,
